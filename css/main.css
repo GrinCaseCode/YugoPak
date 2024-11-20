@@ -520,6 +520,7 @@ form {
 	padding: 22px;
 	line-height: 140%;
 	min-height: 316px;
+	height: 100%;
 	color: #000;
 	position: relative;
 	display: flex;

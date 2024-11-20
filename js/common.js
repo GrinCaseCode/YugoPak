@@ -151,6 +151,36 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			]
 		});
 
+
+		
+
+		{
+			if ($(window).width() > 768) { 
+				$('.row').each(function () {
+					let maxHeight = 0;
+						$(this).find('.item-box').each(function () {
+						let itemHeight = $(this).outerHeight();
+						if (itemHeight > maxHeight) {
+							maxHeight = itemHeight;
+						}
+					});
+			
+					$(this).find('.item-box').css('min-height', maxHeight);
+				});
+			}
+		  }
+
+		{
+			if ($(window).width() < 768) { 
+				$('.item-box').each(function () {
+					let itemHeight = $(this).outerHeight();
+			
+					$(this).css('min-height', itemHeight);
+				});
+			}
+		
+			}
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 
