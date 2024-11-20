@@ -550,6 +550,7 @@ form {
 }
 .item-box .title-middle {
 	margin-bottom: 16px;
+	max-width: 316px;
 	display: block;
 }
 .item-box ul li {
