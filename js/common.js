@@ -43,7 +43,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		  $('.header').removeClass('nav-up').addClass('nav-down');
 	  }
 
-	  lastScrollTop = st;
+	  lastScrollTop = st; 
   }
 
 	//плавный скролл
@@ -155,7 +155,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 
 	 // стайлер для select
-	 $('select').styler();
+	 $('.item-form select').styler();
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
